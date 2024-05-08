@@ -25,4 +25,4 @@ while(1):
                     ptt = input("Enter port count: ")
                     subprocess.call("nmap " + ip + " --top-ports " + ptt, shell=True)
         else:
-            subprocess.call("nmap " + ip, shell=True)
+            subprocess.call("nmap " + ip, shell=True)d
