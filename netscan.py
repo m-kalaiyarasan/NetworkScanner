@@ -26,4 +26,3 @@ while(1):
                     subprocess.call("nmap " + ip + " --top-ports " + ptt, shell=True)
         else:
             subprocess.call("nmap " + ip, shell=True)
-            hrko
