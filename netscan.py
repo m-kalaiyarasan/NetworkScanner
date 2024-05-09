@@ -68,8 +68,3 @@ while(1):
                 subprocess.call("nmap -sL " + ip, shell=True)
             elif type == 9:
                 subprocess.call("nmap -Pn " + ip, shell=True)
-
-
-
-
-
