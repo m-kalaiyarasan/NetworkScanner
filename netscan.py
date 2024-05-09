@@ -28,43 +28,24 @@ while(1):
     else:
         ip = input("Enter the ip: ")
         pt = input("Port specification ?(y/n): ")
+        ptype=""
         if pt == "y" or pt == "Y":
             ptype = port()
-            if type == 1:
-                subprocess.call("nmap " + ip + ptype, shell=True)
-            elif type == 2:
-                subprocess.call("nmap -sS " + ip + ptype, shell=True)
-            elif type == 3:
-                subprocess.call("nmap -sT " + ip + ptype, shell=True)
-            elif type == 4:
-                subprocess.call("nmap -sU " + ip + ptype, shell=True)
-            elif type == 5:
-                subprocess.call("nmap -sV -O " + ip + ptype, shell=True)
-            elif type == 6:
-                subprocess.call("nmap -sI " + ip + ptype, shell=True)
-            elif type == 7:
-                subprocess.call("nmap -sP " + ip + ptype, shell=True)
-            elif type == 8:
-                subprocess.call("nmap -sL " + ip + ptype, shell=True)
-            elif type == 9:
-                subprocess.call("nmap -Pn " + ip + ptype, shell=True)
-
-        elif pt == "n" or pt == "N":
-            if type == 1:
-                subprocess.call("nmap " + ip, shell=True)
-            elif type == 2:
-                subprocess.call("nmap -sS " + ip, shell=True)
-            elif type == 3:
-                subprocess.call("nmap -sT " + ip, shell=True)
-            elif type == 4:
-                subprocess.call("nmap -sU " + ip, shell=True)
-            elif type == 5:
-                subprocess.call("nmap -sV -O " + ip, shell=True)
-            elif type == 6:
-                subprocess.call("nmap -sI " + ip, shell=True)
-            elif type == 7:
-                subprocess.call("nmap -sP " + ip, shell=True)
-            elif type == 8:
-                subprocess.call("nmap -sL " + ip, shell=True)
-            elif type == 9:
-                subprocess.call("nmap -Pn " + ip, shell=True)
+        if type == 1:
+            subprocess.call("nmap " + ip + ptype, shell=True)
+        elif type == 2:
+            subprocess.call("nmap -sS " + ip + ptype, shell=True)
+        elif type == 3:
+            subprocess.call("nmap -sT " + ip + ptype, shell=True)
+        elif type == 4:
+            subprocess.call("nmap -sU " + ip + ptype, shell=True)
+        elif type == 5:
+            subprocess.call("nmap -sV -O " + ip + ptype, shell=True)
+        elif type == 6:
+            subprocess.call("nmap -sI " + ip + ptype, shell=True)
+        elif type == 7:
+            subprocess.call("nmap -sP " + ip + ptype, shell=True)
+        elif type == 8:
+            subprocess.call("nmap -sL " + ip + ptype, shell=True)
+        elif type == 9:
+            subprocess.call("nmap -Pn " + ip + ptype, shell=True)
