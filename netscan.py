@@ -22,38 +22,31 @@ def port():
 while(1):
     print("\n(1) Normal scan \n(2) TCP syn scan\n(3) TCP connect scan\n(4) UDP scan\n(5) service version scan \n(6) Idle scan\n(7) Ping scan\n(8) Host List\n(9) firewall by\n(0) Exit\n")
     type = int(input("Enter the number: "))
+    ip = input("Enter the ip: ")
     if type == 1:
-        ip = input("Enter the ip: ")
         pt = input("Port specification ?(y/n): ")
         if pt == "y" or pt=="Y":
             port()
         else:
             subprocess.call("nmap " + ip, shell=True)
     elif type == 2:
-        ip = input("Enter the ip: ")
         subprocess.call("nmap -sS "+ip,shell=True)
     elif type == 3:
-        ip = input("Enter the ip: ")
         subprocess.call("nmap -sT "+ip,shell=True)
     elif type == 4:
-        ip = input("Enter the ip: ")
         subprocess.call("nmap -sU "+ip,shell=True)
     elif type == 5:
-        ip = input("Enter the ip: ")
         subprocess.call("nmap -sV "+ip,shell=True)
     elif type == 6:
-        ip = input("Enter the ip: ")
         subprocess.call("nmap -sI "+ip,shell=True)
     elif type == 7:
-        ip = input("Enter the ip: ")
         subprocess.call("nmap -sP "+ip,shell=True)
     elif type == 8:
-        ip = input("Enter the ip: ")
         subprocess.call("nmap -sL "+ip,shell=True)
     elif type == 9:
-        ip = input("Enter the ip: ")
         subprocess.call("nmap -Pn "+ip,shell=True)
     elif type == 0:
         exit()
     else:
-        print("Invalid Input")
+        print("Invalid input")
+    print("Want to")
