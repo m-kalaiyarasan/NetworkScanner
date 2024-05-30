@@ -12,6 +12,6 @@ def extract_ip_addresses(text):
 
 
 # Example usage
-text = "The server's IP address is 192.168.1.1 and the client's IP address is 10.0.0.1"
+text = "The server's IP address is 192.168.1.1 and the client's IP address is 10.0.0.1  192.178.7.1"
 ip_addresses = extract_ip_addresses(text)
 print("IP addresses found in the text:", ip_addresses)

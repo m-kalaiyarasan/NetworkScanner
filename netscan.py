@@ -57,5 +57,4 @@ while(1):
         elif type == 9:
             subprocess.call("nmap -Pn " + ip + ptype+op, shell=True)
 
-        input("press enter to continue")
 
